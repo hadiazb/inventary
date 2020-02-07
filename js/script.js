@@ -46,8 +46,10 @@ function limpiar() {
 }
 
 function mostrarTabla(){
-  var cuerpoTabla = document.getElementById("data-table");
+  var cuerpoTabla = document.getElementById("datos-tabla");
   var tablaLlena = "";
-  tablaLlena = "<tr><td>" + articulos[1].nombre + "</td><td>" + articulos[1].color + "</td><td>" + articulos[1].precio + "</td><td>" + articulos[1].unidades + "</td><td>" + articulos[1].referencia + "</td><td>" + articulos[1].marca + "</td><td>" + articulos[1].ingreso + "</td></tr>" ;
+  for (var i = 1; i < articulos.length; i++) {
+    tablaLlena += "<tr><td>" + i + "</td><td>" + articulos[i].nombre + "</td><td>" + articulos[i].color + "</td><td>" + articulos[i].precio + "</td><td>" + articulos[i].unidades + "</td><td>" + articulos[i].referencia + "</td><td>" + articulos[i].marca + "</td><td>" + articulos[i].ingreso + "</td></tr>" ;
+  }
   cuerpoTabla.innerHTML = tablaLlena;
 }

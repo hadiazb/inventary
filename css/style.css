@@ -112,6 +112,9 @@ header h3{
   font-size: .7em;
 }
 
+.section table thead tr{
+  padding: 0 10px;
+}
 .section table .name{
   width: 30%;
 }
@@ -124,11 +127,9 @@ header h3{
 .section table .price{
   width: 10%;
 }
-
 .section table .unity{
   width: 10%;
 }
-
 .section table .referen{
   width: 12%;
 }
@@ -137,4 +138,12 @@ header h3{
 }
 .section table .date{
   width: 10%;
+}
+.section table tbody{
+  font-weight: bold;
+  color: rgb(79, 83, 82);
+  font-size: .6em;
+}
+.section table thead tr{
+  height: 30px;
 }
